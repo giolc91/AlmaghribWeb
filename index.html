@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Almaghrib Official</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="Pictures/spotifycopertina1.png">
+</head>
+
+<body>
+  <!--sidenav e dropdown-->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a target="_blank" href="https://www.facebook.com/almaghribofficial/">Facebook</a></li>
+    <li><a target="_blank" href="https://www.instagram.com/almaghribofficial/">Instagram</a></li>
+    <li><a target="_blank" href="mailto:almaghribmusic@gmail.com">Email</a></li>
+  </ul>
+  <ul id="mobiledemo" class="sidenav">
+        <li><a href="#!" id="viewLabandResponsive">La band</a></li>
+        <li><a href="#!">Album</a></li>
+        <li><a href="#!">Eventi</a></li>
+        <li><a id="tendinaSocial" href="#!" onclick="visualizza()">Social<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li class="dropdown2" id="uno"><a id="unoC" target="_blank" href="https://www.facebook.com/almaghribofficial/">Facebook</a></li>
+            <li class="dropdown2" id="due"><a id="dueC" class="provaColore" target="_blank" href="https://www.instagram.com/almaghribofficial/">Instagram</a></li>
+            <li class="dropdown2" id="tre"><a id="treC" target="_blank" href="mailto:almaghribmusic@gmail.com">Email</a></li>
+        <li><a href="#!">Shop</a></li>
+  </ul>
+
+  <!--fixed navbar-->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper white">
+        <a href="#!" class="brand-logo" id="viewAlmaghrib"><img src="Pictures/almaghrib_logo.png" class="immaginelogo"></a>
+        <a href="#" data-target="mobiledemo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down paddingRight35px">
+          <li><a href="#!" id="viewLaband">La band</a></li>
+          <li><a href="#!" id="viewAlbum">Album</a></li>
+          <li><a href="#!">Eventi</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Social<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="#!">Shop</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="contenitoreUno">
+
+    <!--*primo container*-->
+    <div id="index-banner" class="parallax-container">
+        <div class="center margin-top170px" id="prova1"><img src="Pictures/silenzio.png" alt="" id="sil"></div>
+        <div class="center" id="divAsc"><img src="Pictures/ascoltaidischi.png" alt="no-image" id="asc"></div>
+        <div class="center marginTop20px"><a onclick="suona()" id="download-button" class="btn waves-effect waves-light lighten-1">?</a></div>
+  </div>
+    <br>
+    <audio preload="auto" id="suona">
+      <source src="Music/StradedelPaese.mp3" type="audio/mp3">
+    </audio>
+
+  <div align="center" id="contCome">
+    <table>
+    <td><h5 align="center">_Nasce (in) Silenzio</h5>
+    <p class="textJustified">«Abbiamo voluto interpretare un mondo sommerso all’interno delle mura domestiche che solo noi possiamo decidere se lasciare esplodere o collassare. Una malinconia generata dall’apatia sempre più diffusa tra gli uomini, che sono vittime e allo stesso tempo attori di questo tempo.»</p></td>
+    <td width="60%"><img src="Pictures/spotifycopertina.jpg" alt="Immagine di copertina mancante" class="imag3"></td>
+    </table><br>
+  </div>
+  <div class="container margin-top115px" align="center" id="contCome1">
+    <h5>_Nasce (in) Silenzio</h5>
+    <p id="p4">«Abbiamo voluto interpretare un mondo sommerso all’interno delle mura domestiche che solo noi
+    possiamo decidere se lasciare esplodere o collassare. Una malinconia generata dall’apatia sempre
+    più diffusa tra gli uomini, che sono vittime e allo stesso tempo attori di questo tempo.»</p>
+    <img src="Pictures/spotifycopertina1.png" alt="Fronte Album" class="imag3 margin-top70px">
+    <br>
+  </div>
+
+    <br><br>
+    <div class="container margin-top115px" align="center"><p id="ascolta">Ascolta l'album da Spotify:</p>
+    <div class="section">
+          <iframe src="https://open.spotify.com/embed/album/6ysgWhQuMo4yDwCe3hhD2j" width="90%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </div>
+
+    <br><br>
+    <div id="contSec" class="parallax-container valign-wrapper">
+        <div class="container row center">
+          <h5 id="esiste">Il tempo esiste?</h5>
+        </div>
+          <div class="parallax">
+            <img src="Pictures/background2.jpg" alt="background-none" id="imag2">
+          </div>
+        <p id="p2" class="right-align">Almaghrib, il luogo dove tramonta il sole, il velato riferimento alla cultura occidentale, che in qualche modo tende a renderci meno liberi, ad omologarci. Tra le luci e le ombre dei suoni, avremo la nostra redenzione?</p>
+    </div>
+  <div id="contSec1" class="parallax-container valign-wrapper">
+    <div class="parallax">
+      <img src="Pictures/background2.jpg" alt="background-none" id="imag2">
+    </div>
+    <div><p id="p2" class="center-align">Almaghrib, il luogo dove tramonta il sole, il velato riferimento alla cultura occidentale, che in qualche modo tende a renderci meno liberi, ad omologarci. Tra le luci e le ombre dei suoni, avremo la nostra redenzione?
+        </p>
+      <br>
+        <p id="p3" class="center-align" >Il tempo esiste?</p>
+    </div>
+  </div>
+  </div>
+
+  <div id="divLaband">
+    <div id="divTabella">
+      <div id="tabellaBand">
+      <table>
+        <tr>
+          <td colspan="2"><h6 class="spartanFont">La band:</h6></td>
+        </tr>
+        <tr >
+          <td><img src="Pictures/Vanni.png" alt="" class="fotoProfili"/>
+          <p class="grassetto spostaLeft150px spartanFont">Giovanni Dattolo</p><p class="aka spostaLeft180px spartanFont">aka</p><p class="grassetto1 spostaLeft200px spartanFont">Vanni</p>
+          <p class="descrizione spostaLeft220px spartanFont">Front-man</p></td>
+          <td><img src="Pictures/Juani.png" alt="" class="fotoProfili"/>
+          <p class="grassetto spostaLeft150px spartanFont">Giovanni Romano</p><p class="aka spostaLeft180px spartanFont">aka</p><p class="grassetto1 spostaLeft200px spartanFont">Juani</p>
+          <p class="descrizione spostaLeft220px spartanFont">Polistrumentista/Producer</p></td>
+        </tr>
+        <tr>
+          <td><img src="Pictures/Vanno.png" alt="" class="fotoProfili"/>
+          <p class="grassetto spostaLeft150px spartanFont">Giovanni La Croce</p><p class="aka spostaLeft180px spartanFont">aka</p><p class="grassetto1 spostaLeft200px spartanFont">El Vanno</p>
+          <p class="descrizione spostaLeft220px spartanFont">Chitarre/Voce</p></td>
+          <td><img src="Pictures/Filipercussion.png" alt="" class="fotoProfili"/>
+          <p class="grassetto spostaLeft150px spartanFont">Filippo Triolo</p><p class="aka spostaLeft180px spartanFont">aka</p><p class="grassetto1 spostaLeft200px spartanFont">Filipercussion</p>
+          <p class="descrizione spostaLeft220px spartanFont">Percussioni</p></td>
+        </tr>
+      </table>
+      </div>
+
+      <div id="tabellaBandResponsive">
+
+      <table class="marginTop20px">
+        <tr>
+          <td><h6 class="spartanFont">La band:</h6></td>
+        </tr>
+        <tr>
+          <td class="no-paddingbottom center"><img src="Pictures/Vanni.png" alt="" class="fotoProfiliRespondive"/></td>
+        </tr>
+        <tr>
+          <td class="no-paddingtop center"><p class="grassettoResponsive spostaLeft10px spartanFont">Giovanni Dattolo</p><p class="aka spostaLeft40px spartanFont">aka</p><p class="grassetto1 spostaLeft60px spartanFont">Vanni</p>
+          <p class="descrizione spostaLeft80px spartanFont">Front-man</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="no-paddingbottom center paddingTop45px"><img src="Pictures/Juani.png" alt="" class="fotoProfiliRespondive"/></td>
+        </tr>
+        <tr>
+          <td class="no-paddingtop center"><p class="grassettoResponsive spostaLeft10px spartanFont">Giovanni Romano</p><p class="aka spostaLeft40px spartanFont">aka</p><p class="grassetto1 spostaLeft60px spartanFont">Juani</p>
+          <p class="descrizione spostaLeft80px spartanFont">Polistrumentista/Producer</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="no-paddingbottom center paddingTop45px"><img src="Pictures/Vanno.png" alt="" class="fotoProfiliRespondive"/></td>
+        </tr>
+        <tr>
+          <td class="no-paddingtop center"><p class="grassettoResponsive spostaLeft10px spartanFont">Giovanni La Croce</p><p class="aka spostaLeft40px spartanFont">aka</p><p class="grassetto1 spostaLeft60px spartanFont">El Vanno</p>
+          <p class="descrizione spostaLeft80px spartanFont">Chitarre</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="no-paddingbottom center paddingTop45px"><img src="Pictures/Filipercussion.png" alt="" class="fotoProfiliRespondive"/></td>
+        </tr>
+        <tr>
+          <td class="no-paddingtop center"><p class="grassettoResponsive spostaLeft10px spartanFont">Filippo Triolo</p><p class="aka spostaLeft40px spartanFont">aka</p><p class="grassetto1 spostaLeft60px spartanFont">Filipercussion</p>
+          <p class="descrizione spostaLeft80px spartanFont">Percussioni</p>
+          </td>
+        </tr>
+
+      </table >
+      </div>
+      <table id="collab">
+          <tr>
+            <td colspan="2"><h6 class="spartanFont">Collaborazioni:</h6></td>
+          </tr>
+        <tr >
+          <td><img src="Pictures/Rudy.png" alt="" class="fotoProfili"/>
+            <p class="grassetto2 spostaLeft140px spartanFont">Rudy Pusateri</p>
+            <p class="descrizione spostaLeft180px spartanFont">Producer</p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="Pictures/Lollo.png" alt="" class="fotoProfili"/>
+          <p class="grassetto2 spostaLeft140px spartanFont">Lorenzo Giancontieri</p>
+          <p class="descrizione spostaLeft180px spartanFont">Chitarre/Voce</p></td>
+        </tr>
+        <tr>
+          <td><img src="Pictures/Giorgio.png" alt="" class="fotoProfili"/>
+          <p class="grassetto2 spostaLeft140px spartanFont">Giorgio Varvaro</p>
+          <p class="descrizione spostaLeft180px spartanFont">Photographer</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="divAlbum">
+    <table>
+      <tr>
+        <td>
+          <div><img src="Pictures/spotifycopertina.jpg" id="immagineCont3"></div>
+          <div class="center;"><img id="imag4" src="Pictures/silenzio.png"></div>
+        </td>
+        <td class="spartanFont paddingBottom105px">
+          <p class="paddingLeft20px noMarginBottom"><b>Tracce:</b></p>
+          <p class="paddingLeft20px marginTop3px">
+          <a href="http://www.google.it">_Ciao ciao</a><br>
+          <a href="#">_San Giovanni (Perdona la mia Terra)</a><br>
+          <a href="#">_Giostra della vita</a><br>
+          <a href="#">_Uniti in Eterno (Vola)</a><br>
+          <a href="#">_Mamma Africa</a><br>
+          <a href="#">_Ovunque andrai</a><br>
+          <a href="#">_Nta sta Terra</a><br>
+          <a href="#">_Olio su tela</a><br>
+          <a href="#">_Strade del Paese</a><br>
+          <a href="#">_Fantasmi senza età</a><br>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+
+  <footer class="page-footer">
+    <div class="container" id="contFooter">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text fontCormorant1 noMarginBottom" id="ciaociao">Almagrhib - Ciao ciao</h5>
+          <p class="grey-text text-lighten-4 fontCormorant2">
+            Mi limito da un pezzo, mi limito all’ascolto
+            <br>Parole di conforto alla fine della corsa
+            <br>Respira e non affonda, respira e niente crolla
+            <br>E tutto si dissolve in una grande bolla
+            <br>Ascolta i dischi, in tempi tosti...</p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+    <div class="footer-copyright containerFooter">
+      <div class="container containerFooter textRight" id="copyri">Copyright © 2019
+      <a class="brown-text text-lighten-3" href="#">Almagrhib</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      var mobiledemo = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(mobiledemo, {edge: "left"});
+    });
+
+    var ver =true;
+    $("#tendinaSocial").click(
+      function(){
+        if(ver==true){
+          document.getElementById('uno').style.display="block";
+          document.getElementById('due').style.display="block";
+          document.getElementById('tre').style.display="block";
+          ver=false;
+        }else if(ver==false){
+          document.getElementById('uno').style.display="none";
+          document.getElementById('due').style.display="none";
+          document.getElementById('tre').style.display="none";
+          ver=true;
+        }
+      }
+    )
+
+    $("#viewAlmaghrib").click(function(){
+      document.getElementById('contenitoreUno').style.display="block";
+      document.getElementById('divLaband').style.display="none";
+      document.getElementById('divAlbum').style.display="none";
+    })
+
+    $("#viewLaband").click(function(){
+      document.getElementById('contenitoreUno').style.display="none";
+      document.getElementById('divLaband').style.display="block";
+      document.getElementById('divAlbum').style.display="none";
+    })
+
+    $("#viewLabandResponsive").click(function(){
+      document.getElementById('contenitoreUno').style.display="none";
+      document.getElementById('divLaband').style.display="block";
+      document.getElementById('divAlbum').style.display="none";
+    })
+
+    $("#viewAlbum").click(function(){
+      document.getElementById('contenitoreUno').style.display="none";
+      document.getElementById('divLaband').style.display="none";
+      document.getElementById('divAlbum').style.display="block";
+    })
+
+   $("#download-button").click(function(){
+      document.getElementById('suona').play();
+    })
+  </script>
+
+
+  </body>
+</html>
