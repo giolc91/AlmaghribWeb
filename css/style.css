@@ -34,6 +34,10 @@ nav .brand-logo {
   padding-bottom: 0%;
 }
 
+.marginTop700px{
+
+}
+
 #p2,#p3 {
   font-family: 'Spartan', sans-serif;
   margin-bottom: 0%;
@@ -161,12 +165,17 @@ li a{
   #ciaociao{
     font-size: 14px;
   }
-  #contFooter{
-      margin-left: 15px;
-      margin-right: 40px;
+
+  .width75Perc{
+    width: 75%;
   }
   #copyri{
-    margin-left: 15px;
+
+    width: 100px;
+    margin-left: 0px;
+  }
+  .affianca{
+    float: left;
   }
   #tabellaBandResponsive{
     display: block;
@@ -178,13 +187,20 @@ li a{
 .textRight{
   text-align: right;
 }
+
+.marginBottom110px{
+  margin-bottom: 120px;
+}
+
 @media only screen and (min-width : 888px) {
   #divAsc{
     padding-top: 170px;
     padding-bottom: 220px;
   }
+
   #contFooter{
       margin-left: 40px;
+      margin-bottom: 28px;
   }
   #copyri{
     margin-right: 40px;
@@ -224,7 +240,6 @@ li a{
     left: -9999px;
   }
   #divAlbum{
-    height: auto;
     display:none;
   }
 }
@@ -240,9 +255,10 @@ li a{
   }
 
   #divAlbum{
-    height: 1200px;
+    height: 1100px;
     display:none;
   }
+
   #divAlbum table{
     width:70%;
     margin-left: 130px;
@@ -258,12 +274,26 @@ li a{
     width:340px;
     border: 1px solid black;
   }
+  #silenzioAlbum{
+    padding-left: 60px;
+  }
+  #playList{
+    margin-top: 0px;
+    text-decoration: underline;
+  }
   #imag2{
     width: 100%;
     height: auto;
   }
   #imag4{
-    width: 250px;
+    width: 330px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  #tracce{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
   nav .immaginelogo{
     padding-top: 9px;
@@ -379,6 +409,20 @@ table{
 .no-paddingbottom{
   padding-bottom: 0px;
 }
+
+.onRight{
+  float: right;
+  padding-top: 5px;
+}
+.onLeft{
+  float: left;
+}
+
+#sostienici{
+  margin-left: 80px;
+  width: 470px;;
+}
+
 .grassetto{
   font-weight: bold;
   margin-bottom: 0px;
@@ -429,7 +473,9 @@ table{
 .spartanFont{
   font-family: "Spartan", sans-serif;
 }
-
+.spostaLeft80px{
+  padding-left: 80px;
+}
 .spostaLeft150px{
   padding-left: 150px;
 }
@@ -498,6 +544,22 @@ table{
   margin-top: 3px;
 }
 
+#divAlbum iframe{
+  margin-top: 80px;
+  margin-left: 37%;
+}
+#testo{
+  margin-top: 180px;
+}
+
+.title{
+  font-size: 90px;
+}
+
+.fontLyrics{
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 35px;
+}
 
 footer p{
   line-height: 16px;
