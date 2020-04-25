@@ -18,16 +18,6 @@ nav .brand-logo {
   color: white;
 }
 
-#divEventi{
-  height: 489px;
-}
-.positionSocialLogo{
-  position: relative;
-  text-align: right;
-  right: 55px;
-  bottom: 95px;
-}
-
 
 .dimLogoF{
   width: 30px;
@@ -192,6 +182,16 @@ li a{
 
 
 @media only screen and (max-width : 888px) {
+  #contFooter{
+    text-align: center;
+    margin-bottom: 70px;
+    height: 160px;
+  }
+  #btnDonate{
+    position: relative;
+    margin-top: -10px;
+    margin-left: 40px;
+  }
   #divAsc{
     padding-top: 190px;
   }
@@ -201,16 +201,18 @@ li a{
   }
 
   #ciaociao{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .width75Perc{
     width: 75%;
   }
   #copyri{
-
-    width: 100px;
-    margin-left: 0px;
+    width: 200px;
+    margin-right: 10px;
+    position: relative;
+    top: 15px;
+    margin-bottom: 30px;
   }
   .affianca{
     float: left;
@@ -226,11 +228,28 @@ li a{
   text-align: right;
 }
 
-.marginBottom110px{
-  margin-bottom: 120px;
+.marginBottom60px{
+  margin-bottom: 60px;
+}
+.marginBottom130px{
+  margin-bottom: 130px;
 }
 
 @media only screen and (min-width : 888px) {
+  #sostienici{
+    margin-left: 80px;
+    width: 470px;
+  }
+  .positionSocialLogo{
+    position: relative;
+    text-align: right;
+    right: 55px;
+    bottom: 95px;
+  }
+
+  #divEventi{
+    height: 489px;
+  }
   #divAsc{
     padding-top: 170px;
     padding-bottom: 220px;
@@ -253,6 +272,36 @@ li a{
 }
 
 @media only screen and (max-width : 888px) {
+  #sostienici{
+    margin-left: 20px;
+    width: 160px;
+    font-size: 10px;
+    text-align: justify;
+  }
+
+  .positionSocialLogo{
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  #sil{
+    width: 300px;
+  }
+  #divEventi{
+    height: 489px;
+  }
+  #messageStayTuned{
+    font-size: 13px;
+  }
+  #messageEventi{
+    text-decoration: underline;
+    font-size: 11px;
+  }
+  #picFrontAlbum{
+    width:180px;
+    border: 1px solid black;
+  }
   #contCome{
     display: none;
     position: absolute;
@@ -264,6 +313,11 @@ li a{
   }
   #imag2{
     height: 100%;
+  }
+
+  #silenzioAlbum{
+    margin-top: 20px;
+    width: 160px;
   }
   nav .immaginelogo{
     padding-top: 10px;
@@ -279,14 +333,23 @@ li a{
     left: -9999px;
   }
   #divAlbum{
+    margin-bottom: 40px;
     display:none;
+  }
+  #tracce{
+    font-size: 20px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+  }
+  #playList{
+    margin-top: 0px;
+    text-decoration: underline;
   }
 }
 @media only screen and (min-width : 888px) {
-body{
-  overflow:auto;
-direction:ltr;
-  }
+.FotoAlbum{
+  width: 50%;
+}
   /* width */
 ::-webkit-scrollbar {
   width: 7px;
@@ -332,7 +395,7 @@ direction:ltr;
     padding-right:25px;
     padding-top: 0px;
   }
-  #immagineCont3{
+  #picFrontAlbum{
     width:340px;
     border: 1px solid black;
   }
@@ -347,7 +410,7 @@ direction:ltr;
     width: 100%;
     height: auto;
   }
-  #imag4{
+  #silenzioAlbum{
     width: 330px;
     padding-top: 40px;
     padding-bottom: 10px;
@@ -479,11 +542,13 @@ table{
 .onLeft{
   float: left;
 }
-
-#sostienici{
-  margin-left: 80px;
-  width: 470px;;
+.onRight1{
+  float: right;
 }
+.onRight1{
+  float: center;
+}
+
 
 .grassetto{
   font-weight: bold;
