@@ -18,6 +18,42 @@ nav .brand-logo {
   color: white;
 }
 
+#divEventi{
+  height: 489px;
+}
+.positionSocialLogo{
+  position: relative;
+  text-align: right;
+  right: 55px;
+  bottom: 95px;
+}
+
+
+.dimLogoF{
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  margin-right: 6.8px;
+}
+.dimLogoI{
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+.dimLogoFG{
+  width: 60px;
+  height: 60px;
+  margin-top: 8px;
+  margin-right: 6.8px;
+}
+.dimLogoIG{
+  width: 60px;
+  height: 60px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
 #sil{
   width: 340px;
   height: auto;
@@ -86,7 +122,7 @@ nav .brand-logo {
 }
 
 
-#download-button{
+#teaser{
   font-weight: bold;
   text-decoration: underline;
   font-size: 1.2em;
@@ -201,6 +237,7 @@ li a{
   #contFooter{
       margin-left: 40px;
       margin-bottom: 28px;
+      height: 110px;
   }
   #copyri{
     margin-right: 40px;
@@ -244,6 +281,29 @@ li a{
   }
 }
 @media only screen and (min-width : 888px) {
+body{
+  overflow:auto;
+direction:ltr;
+  }
+  /* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #363636;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c3c3c3;
+}
   #contCome1{
     display: none;
     position: absolute;
@@ -253,7 +313,9 @@ li a{
     height: 1200px;
     display: none;
   }
-
+  #divEventi{
+    display: none;
+  }
   #divAlbum{
     height: 1100px;
     display:none;
@@ -549,7 +611,7 @@ table{
   margin-left: 37%;
 }
 #testo{
-  margin-top: 180px;
+  margin-top: 190px;
 }
 
 .title{

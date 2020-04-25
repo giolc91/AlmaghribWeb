@@ -22,6 +22,7 @@
     <li><a target="_blank" href="mailto:almaghribmusic@gmail.com">Email</a></li>
   </ul>
   <ul id="mobiledemo" class="sidenav">
+        <li><a href="#!" id="viewHomeResponsive">Home</a></li>
         <li><a href="#!" id="viewLabandResponsive">La band</a></li>
         <li><a href="#">Album</a></li>
         <li><a href="#!">Eventi</a></li>
@@ -36,13 +37,14 @@
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper white">
-        <a href="#!" class="brand-logo" id="viewAlmaghrib"><img src="Pictures/almaghrib_logo.png" class="immaginelogo"></a>
+        <a href="#" class="brand-logo" id="viewAlmaghrib"><img src="Pictures/almaghrib_logo.png" class="immaginelogo"></a>
         <a href="#" data-target="mobiledemo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down paddingRight35px">
+          <li><a href="#" id="viewHome">Home</a></li>
           <li><a href="#" id="viewLaband">La band</a></li>
           <li><a href="#" id="viewAlbum">Album</a></li>
-          <li><a href="#">Eventi</a></li>
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Social<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="#" id="viewEventi">Eventi</a></li>
+          <!--<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Social<i class="material-icons right">arrow_drop_down</i></a></li>-->
           <li><a href="#!">Shop</a></li>
         </ul>
       </div>
@@ -55,7 +57,8 @@
     <div id="index-banner" class="parallax-container">
         <div class="center margin-top170px" id="prova1"><img src="Pictures/silenzio.png" alt="" id="sil"></div>
         <div class="center" id="divAsc"><img src="Pictures/ascoltaidischi.png" alt="no-image" id="asc"></div>
-        <div class="center marginTop20px"><a onclick="suona()" id="download-button" class="btn waves-effect waves-light lighten-1">?</a></div>
+        <div class="center marginTop20px"><a id="teaser" href="#teaser" class="btn waves-effect waves-light lighten-1">?</a></div>
+
   </div>
     <br>
     <audio preload="auto" id="suona">
@@ -204,7 +207,7 @@
           <img id="imag4" src="Pictures/silenzio.png">
           <div class=""><img src="Pictures/spotifycopertina.jpg" id="immagineCont3"></div>
 
-          <p id="tracce"><b>Track:</b></p>
+          <p id="tracce"><b>Ascolta le tracce:</b></p>
           <p id="playList">
           <a href="#playSection" id="ciao">_Ciao ciao</a><br>
           <a href="#playSection" id="san">_San Giovanni (Perdona la mia Terra)</a><br>
@@ -223,18 +226,33 @@
 
   </section>
   </div>
-
+  <div id="divEventi" class="center spartanFont">
+    <br><br><br>
+    <p>Non sono attualmente presenti attualmente date ufficiali,<br> stiamo lavorando per voi...</p><br><br>
+    <p><b>Rimani aggiornato attraverso i nostri canali:</b></p>
+    <div class="">
+      <a href="https://www.facebook.com/almaghribofficial/" target="_blank"><img id="logoFb" src="Loghi/facebook.png" class="dimLogoFG" alt=""></a>
+      <a href="https://www.instagram.com/almaghribofficial/" target="_blank"><img id="logoIn" src="Loghi/instagram.png" class="dimLogoIG" alt=""></a>
+      <a href="mailto:almaghribmusic@gmail.com" target="_blank"><img id="logoEm"src="Loghi/mail.png" class="dimLogoFG" alt=""></a>
+    </div>
+  </div>
 
   <footer class="page-footer" id="foot">
 
           <div id="contFooter">
-            <h5 class="white-text fontCormorant1 noMarginBottom" id="ciaociao">Almaghrib - Ciao ciao</h5>
-            <p class="grey-text text-lighten-4 fontCormorant2">
-              Mi limito da un pezzo, mi limito all’ascolto
-              <br>Parole di conforto alla fine della corsa
-              <br>Respira e non affonda, respira e niente crolla
-              <br>E tutto si dissolve in una grande bolla
-              <br>Ascolta i dischi, in tempi tosti...</p>
+              <h5 class="white-text fontCormorant1 noMarginBottom" id="ciaociao">Almaghrib - Ciao ciao</h5>
+              <p class="grey-text text-lighten-4 fontCormorant2">
+                Mi limito da un pezzo, mi limito all’ascolto
+                <br>Parole di conforto alla fine della corsa
+                <br>Respira e non affonda, respira e niente crolla
+                <br>E tutto si dissolve in una grande bolla
+                <br>Ascolta i dischi, in tempi tosti...</p>
+            <div class="positionSocialLogo">
+              <p class="spartanFont">Ovunque andrai<br>ovunque andremo</p>
+              <a href="https://www.facebook.com/almaghribofficial/" target="_blank"><img id="logoFb" src="Loghi/facebook.png" class="dimLogoF" alt=""></a>
+              <a href="https://www.instagram.com/almaghribofficial/" target="_blank"><img id="logoIn" src="Loghi/instagram.png" class="dimLogoI" alt=""></a>
+              <a href="mailto:almaghribmusic@gmail.com" target="_blank"><img id="logoEm"src="Loghi/mail.png" class="dimLogoF" alt=""></a>
+            </div>
           </div>
 
 
@@ -286,36 +304,67 @@
     )
 
     $("#viewAlmaghrib").click(function(){
+      $('#divAlbum iframe').remove();
+      $('#testo').remove();
       document.getElementById('contenitoreUno').style.display="block";
       document.getElementById('divLaband').style.display="none";
       document.getElementById('divAlbum').style.display="none";
     })
+    $("#viewHomeResponsive").click(function(){
+      $('#divAlbum iframe').remove();
+      $('#testo').remove();
+      document.getElementById('contenitoreUno').style.display="block";
+      document.getElementById('divLaband').style.display="none";
+      document.getElementById('divAlbum').style.display="none";
+    })
+    $("#viewHome").click(function(){
+      $('#divAlbum iframe').remove();
+      $('#testo').remove();
+      document.getElementById('contenitoreUno').style.display="block";
+      document.getElementById('divLaband').style.display="none";
+      document.getElementById('divAlbum').style.display="none";
+      document.getElementById('divEventi').style.display="none";
+    })
 
     $("#viewLaband").click(function(){
+      $('#divAlbum iframe').remove();
+      $('#testo').remove();
       document.getElementById('contenitoreUno').style.display="none";
       document.getElementById('divLaband').style.display="block";
       document.getElementById('divAlbum').style.display="none";
+      document.getElementById('divEventi').style.display="none";
     })
 
     $("#viewLabandResponsive").click(function(){
+      $('#divAlbum iframe').remove();
+      $('#testo').remove();
       document.getElementById('contenitoreUno').style.display="none";
       document.getElementById('divLaband').style.display="block";
       document.getElementById('divAlbum').style.display="none";
+      document.getElementById('divEventi').style.display="none";
     })
 
     $("#viewAlbum").click(function(){
+      $('#divAlbum iframe').remove();
+      $('#testo').remove();
       document.getElementById('contenitoreUno').style.display="none";
       document.getElementById('divLaband').style.display="none";
       document.getElementById('divAlbum').style.display="block";
+      document.getElementById('divEventi').style.display="none";
     })
 
-   $("#download-button").click(function(){
-      document.getElementById('suona').play();
+    $("#viewEventi").click(function(){
+      $('#divAlbum iframe').remove();
+      $('#testo').remove();
+      document.getElementById('contenitoreUno').style.display="none";
+      document.getElementById('divLaband').style.display="none";
+      document.getElementById('divAlbum').style.display="none";
+      document.getElementById('divEventi').style.display="block";
     })
-
   </script>
 
   <script type="text/javascript">
+
     $('#ciao').click(function(){
       $('#divAlbum iframe').remove();
       $('#testo').remove();
@@ -354,21 +403,21 @@
       $('#divAlbum iframe').remove();
       $('#testo').remove();
       $('#divAlbum').append('<iframe class="" width="350" height="350" src="https://www.youtube.com/embed/wXd6_hDttqc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-      $('#divAlbum').after('<div id="testo"><p class="center marginBottom110px fontLyrics"><br><span class="title">Ovunque andrai</span><br><br>Totalmente pazzi<br><br>Il titolo del pezzo il titolo di borsa<br>Ti tolgono il complesso di morire in una morsa<br>Il titolo che affonda il titolo che crolla<br>E tutto si trasforma in una grande noia<br>Ascolta i dischi, in tempi tosti<br>E guardati da lì, affronta i rischi<br>Mista sulla mano rullo accendo e dico ciao ciao<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br>Le corde perdono colore ore dopo ore<br>Altro whisky e sudore<br>Cerco un’emozione in un viaggio interiore<br>Un altro treno un altro odore, sta lì la soluzione?<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br><br>Ciao ciao<br><br>Mi limito da un pezzo, mi limito all’ascolto<br>Parole di conforto alla fine della corsa<br>Respira e non affonda, respira e niente crolla<br>E tutto si dissolve in una grande bolla<br>Ascolta i dischi, in tempi tosti<br>E guardati da lì, affronta i rischi<br>Mista sulla mano rullo accendo e dico ciao ciao<br><br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su no no no no no<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br>Ciao ciao<br><br>Mista sulla mano rullo accendo e dico ciao ciao</p></div>'
-      );
+      $('#divAlbum').after('<div id="testo"><p class="center marginBottom110px fontLyrics"><br><span class="title">Ovunque andrai</span><br><br>Prendere una strada<br>Un viaggio fantastico segnale radio<br>Che arriva fino a casa<br>Un posto piccolo che quasi soffoco<br>L’asfalto brucia, è la cura<br>Disegnata con le linee su quei monti di confine<br>Troppo alti per vedere qual è la loro fine<br><br>Ovunque andrai ti sentirò ti penserò<br>Ovunque andrai io ci sarò<br><br>Liberi nel mondo<br>Un libro bianco nomadi d’animo<br>Al ritmo di una danza<br>Il mondo spaccano l’oceano infrangono<br>L’estate brucia, è la cura<br>Del vento in quelle sere che rigonfia le tue vele<br>Verso nuovi occhi neri verso nuove storie vere<br><br>Ovunque andrai ti sentirò ti penserò<br>Ovunque andrai io ci sarò<br>Ovunque andrai<br><br>Ferma ad un semaforo<br>Rincorri l’attimo in preda al panico<br>Andare controtempo<br>Ti dà lo slancio se resti pratico<br>Il tempo brucia, è la cura<br>Sempre si nasconde tra gli abbracci delle onde<br>Nell’urlo delle vene che nel cielo esplode<br><br>Ovunque andrai ti sentirò ti penserò<br>Ovunque andrai io ci sarò</div>'
+    );
     })
     $('#nta').click(function(){
       $('#divAlbum iframe').remove();
       $('#testo').remove();
       $('#divAlbum').append('<iframe class="" width="350" height="350" src="https://www.youtube.com/embed/wXd6_hDttqc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-      $('#divAlbum').after('<div id="testo"><p class="center marginBottom110px fontLyrics"><br><span class="title">Nta sta terra</span><br><br>Totalmente pazzi<br><br>Il titolo del pezzo il titolo di borsa<br>Ti tolgono il complesso di morire in una morsa<br>Il titolo che affonda il titolo che crolla<br>E tutto si trasforma in una grande noia<br>Ascolta i dischi, in tempi tosti<br>E guardati da lì, affronta i rischi<br>Mista sulla mano rullo accendo e dico ciao ciao<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br>Le corde perdono colore ore dopo ore<br>Altro whisky e sudore<br>Cerco un’emozione in un viaggio interiore<br>Un altro treno un altro odore, sta lì la soluzione?<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br><br>Ciao ciao<br><br>Mi limito da un pezzo, mi limito all’ascolto<br>Parole di conforto alla fine della corsa<br>Respira e non affonda, respira e niente crolla<br>E tutto si dissolve in una grande bolla<br>Ascolta i dischi, in tempi tosti<br>E guardati da lì, affronta i rischi<br>Mista sulla mano rullo accendo e dico ciao ciao<br><br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su no no no no no<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br>Ciao ciao<br><br>Mista sulla mano rullo accendo e dico ciao ciao</p></div>'
+      $('#divAlbum').after('<div id="testo"><p class="center marginBottom110px fontLyrics"><br><span class="title">Nta sta terra</span><br><br>Guardo questa terra e mi sento siciliano<br>Guardo questo mare e vorrei andar lontano<br>Bisogna gridar forte e non parlare piano<br>Purtroppo a volte ce ne andiamo ma errare è umano<br>Sento sto profumo e mi sento siciliano<br>Sento certe cose e un mi pari stranu<br>Avemu li radici cà quindi riturnamu<br>Cara terra mia propriu iu ti amu<br><br>La gente è sempre pronta a giudicare<br>Per un pugno di note mi vorrebbero fermare<br>Non c’è niente di immorale è una cosa naturale<br>Amico tu mi giudichi ma per me è normale<br>Mi fa stare bene scorre vita nelle vene<br>C’è gente che fa peggio ma non la vuoi vedere<br>Non siamo criminali ma neanche un pò normali<br>Perché è vero siamo angeli a cui piace aprir le ali patti chiari<br>Se la scrivo dimmi che fastidio porta<br>Banale o no è sempre la mia storia<br>Quattro giri e sta musica trasporta<br>Quindi non sentire ma ascolta<br><br>Guardo questa terra e mi sento siciliano<br>Guardo questo mare e vorrei andar lontano<br>Bisogna gridar forte e non parlare piano<br>Purtroppo a volte ce ne andiamo ma errare è umano<br>Sento sto profumo e mi sento siciliano<br>Sento certe cose e un mi pari stranu<br>Avemu li radici cà quindi riturnamu<br>Cara terra mia propriu iu ti amu<br>‘nta sta terra regna forte l’ignoranza<br><br>Saremo pure un’isola ma è china di barrieri ’nta sustanza<br>Troppi omini di panza fannu campari cristiani vint’anni in latitanza<br>Dunni ti giri giri cà è tutto un mancia mancia<br>È una terra che si sfascia regredisce qua va tutto alla rovescia<br>E nessuno lo capisce<br><br>Guardo questa terra e mi sento siciliano<br>Guardo questo mare e vorrei andar lontano<br>Bisogna gridar forte e non parlare piano<br>Purtroppo a volte ce ne andiamo ma errare è umano<br>Sento sto profumo e mi sento siciliano<br>Sento certe cose e un mi pari stranu<br>Avemu li radici cà quindi riturnamu<br>Cara terra mia propriu iu ti amu</p></div>'
       );
     })
     $('#olio').click(function(){
       $('#divAlbum iframe').remove();
       $('#testo').remove();
       $('#divAlbum').append('<iframe class="" width="350" height="350" src="https://www.youtube.com/embed/wXd6_hDttqc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-      $('#divAlbum').after('<div id="testo"><p class="center marginBottom110px fontLyrics"><br><span class="title">Olio su tela</span><br><br>Totalmente pazzi<br><br>Il titolo del pezzo il titolo di borsa<br>Ti tolgono il complesso di morire in una morsa<br>Il titolo che affonda il titolo che crolla<br>E tutto si trasforma in una grande noia<br>Ascolta i dischi, in tempi tosti<br>E guardati da lì, affronta i rischi<br>Mista sulla mano rullo accendo e dico ciao ciao<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br>Le corde perdono colore ore dopo ore<br>Altro whisky e sudore<br>Cerco un’emozione in un viaggio interiore<br>Un altro treno un altro odore, sta lì la soluzione?<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br><br>Ciao ciao<br><br>Mi limito da un pezzo, mi limito all’ascolto<br>Parole di conforto alla fine della corsa<br>Respira e non affonda, respira e niente crolla<br>E tutto si dissolve in una grande bolla<br>Ascolta i dischi, in tempi tosti<br>E guardati da lì, affronta i rischi<br>Mista sulla mano rullo accendo e dico ciao ciao<br><br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su no no no no no<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br>Ciao ciao<br><br>Mista sulla mano rullo accendo e dico ciao ciao</p></div>'
+      $('#divAlbum').after('<div id="testo"><p class="center marginBottom110px fontLyrics"><br><span class="title">Olio su tela</span><br><br>Chiudere le palpebre<br>Viaggiare tra le membra<br>Il mondo si ribella<br>E l’andamento accelera<br><br>La luce della luna che ci illummina<br>L’odore del grano e della semina<br>Lu ventu chi ni ciucia ‘nta la schiena<br><br>Il suono che travolge<br>La vita ti sconvolge<br>Il ritmo delle onde<br>Quelle più profonde<br>Mi sembrano rispondere<br><br>Profumo di ‘na terra chi si vagna<br>Cu carica cantuna e cu ‘un travagghia<br>Cu si stocca li rini ‘nta la vigna<br>E cu si scura sempri ‘nta la pagghia<br>Silenzio ed omertà non parla chi lo sa<br>È cosi che va<br>Irreale verità<br><br>La luce della luna che ci illumina<br>L’odore del grano e della semina<br>Lu ventu chi ni ciucia ‘nta la schiena<br>Profumo di ‘na terra chi si vagna<br>Cu carica cantuna e cu ‘un travagghia<br>Cu si stocca li rini ‘nta la vigna<br>E cu si scura sempri ‘nta la pagghia<br><br>Silenzio</p></div>'
       );
     })
     $('#strade').click(function(){
@@ -382,10 +431,16 @@
       $('#divAlbum iframe').remove();
       $('#testo').remove();
       $('#divAlbum').append('<iframe class="" width="350" height="350" src="https://www.youtube.com/embed/wXd6_hDttqc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-      $('#divAlbum').after('<div id="testo"><p class="center marginBottom110px fontLyrics"><br><span class="title">Fantasmi senza età</span><br><br>Totalmente pazzi<br><br>Il titolo del pezzo il titolo di borsa<br>Ti tolgono il complesso di morire in una morsa<br>Il titolo che affonda il titolo che crolla<br>E tutto si trasforma in una grande noia<br>Ascolta i dischi, in tempi tosti<br>E guardati da lì, affronta i rischi<br>Mista sulla mano rullo accendo e dico ciao ciao<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br>Le corde perdono colore ore dopo ore<br>Altro whisky e sudore<br>Cerco un’emozione in un viaggio interiore<br>Un altro treno un altro odore, sta lì la soluzione?<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br><br>Ciao ciao<br><br>Mi limito da un pezzo, mi limito all’ascolto<br>Parole di conforto alla fine della corsa<br>Respira e non affonda, respira e niente crolla<br>E tutto si dissolve in una grande bolla<br>Ascolta i dischi, in tempi tosti<br>E guardati da lì, affronta i rischi<br>Mista sulla mano rullo accendo e dico ciao ciao<br><br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su no no no no no<br>Se ci ragioni su hai ragione tu<br>Se ci ragioni su<br>Ciao ciao<br><br>Mista sulla mano rullo accendo e dico ciao ciao</p></div>'
+      $('#divAlbum').after('<div id="testo"><p class="center marginBottom110px fontLyrics"><br><span class="title">Fantasmi senza età</span><br><br>Le Strade Del Paese<br>La Complicità<br>Nella Notte Dei Fantasmi Senza Età<br>Ci Fanno Compagnia<br>È La Sincerità Di Una Voce Che Da Guida Ci Farà<br><br>Due Di Notte Penne E Lotte Non Ricordo<br>Che Cosa Avevi Detto Che Cosa Avevi Scelto<br>Chiavi Casa Borsa Spalla E Resto Sordo<br>A Ciò Che Avevi Detto A Ciò Che Avevo Intorno<br>E Penso Tra Le Luci Che Sanno Vedere<br>Che Cosa Si Nasconde Nella Testa A Bassa Voce<br>Cammino Fino A Dove Arriverà Una Risposta<br>Il Mondo Attorno A Me Per Ore Ancora Dormirà<br><br>Le Strade Del Paese<br>La Complicità<br>Nella Notte Dei Fantasmi Senza Età<br>Ci Fanno Compagnia<br>È La Sincerità Di Una Voce Che Da Guida Ci Farà<br><br>Passo Dopo Passo E Dopo Passo Ancora<br>Mi Rivolto Dentro Fumo E Sentimento<br>Tre Di Notte Pioggia E Botte Non È L’ora<br>Di Tornare Indietro Adesso Lo Riaccendo<br>E Penso Tra Le Luci Che Sanno Vedere<br>Che Cosa Si Nasconde Nella Testa A Bassa Voce<br>Cammino Fino A Dove Arriverà Una Risposta<br>Il Mondo Attorno A Me Per Ore Ancora Dormirà<br><br><br>Le Strade Del Paese<br>La Complicità<br>Nella Notte Dei Fantasmi Senza Età<br>Ci Fanno Compagnia<br>È La Sincerità Di Una Voce Che Da Guida Ci Farà</p></div>'
       );
     })
+
+    $('#teaser').click(function(){
+      $('#teaser').after('<iframe width="672" height="378" src="https://www.youtube.com/embed/qX17Q3ILzmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+      $('#teaser').remove();
+    })
   </script>
+
 
 
   </body>
