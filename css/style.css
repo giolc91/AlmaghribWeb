@@ -148,7 +148,9 @@ nav .brand-logo {
   margin-top: 20px;
 }
 
-
+#divEventi{
+  display: none;
+}
 
 p {
   line-height: 2rem;
@@ -313,9 +315,7 @@ direction:ltr;
     height: 1200px;
     display: none;
   }
-  #divEventi{
-    display: none;
-  }
+
   #divAlbum{
     height: 1100px;
     display:none;
