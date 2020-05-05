@@ -49,7 +49,7 @@ nav .brand-logo {
   height: auto;
 }
 #asc{
-  width: 380px;
+  width: 600px;
   height: auto;
 }
 
@@ -673,8 +673,8 @@ table{
 .margin-top70px{
   margin-top: 70px;
 }
-.invisibile{
-  display: none;
+.misureLogo{
+  width: 600px;
 }
 #tabellaBand{
   margin-left: 60px;
