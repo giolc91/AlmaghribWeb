@@ -176,6 +176,9 @@ li a{
 
 
 @media only screen and (max-width : 888px) {
+  .misureLogo{
+    width: 280px;
+  }
   .FotoAlbum{
     width: 100%;
   }
@@ -244,6 +247,9 @@ li a{
 }
 
 @media only screen and (min-width : 888px) {
+  .misureLogo{
+    width: 600px;
+  }
   #testo{
     margin-top: 190px;
   }
@@ -673,9 +679,7 @@ table{
 .margin-top70px{
   margin-top: 70px;
 }
-.misureLogo{
-  width: 600px;
-}
+
 #tabellaBand{
   margin-left: 60px;
 }

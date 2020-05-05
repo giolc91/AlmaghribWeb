@@ -28,3 +28,32 @@
 	padding-top: 20px;
 	font-size: 16px;
 }
+
+@media only screen and (max-width : 888px){
+	#clockdiv > div{
+		padding: 10px;
+		border-radius: 3px;
+		background: #AFC7C7;
+		display: inline-block;
+		box-shadow: 5px 5px 5px #888888;
+	}
+	#clockdiv > div{
+		padding: 8px;
+		border-radius: 3px;
+		background: #AFC7C7;
+		display: inline-block;
+		box-shadow: 5px 5px 5px #888888;
+	}
+	.smalltext{
+		padding-top: 14px;
+		font-size: 14px;
+	}
+	#clockdiv div > span{
+		padding: 27px 8px 20px 10px;
+		border-radius: 3px;
+		background: #5E767E;
+		display: inline-block;
+		box-shadow: 3px 3px 3px #888888;
+		font-size: 26px;
+	}
+}
